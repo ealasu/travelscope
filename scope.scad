@@ -4,7 +4,7 @@ use <../MCAD/shapes.scad>;
 translate([0,0,-0.75/2]){
     difference() {
         octagon(12, 0.75);
-        cylinder(h=1,r=9/2,center=true);
+        cylinder(h=1,r=9/2,center=true,$fn=100);
     }
 }
 
@@ -52,11 +52,11 @@ translate([0,0,length]){
         brace();
     }
     translate([0,0,-3.75]){
-        cylinder(h=0.75,r=8/2,center=true);
+        cylinder(h=0.75,r=8/2,center=true,$fn=100);
     }
     color("white"){
         translate([0,0,-4.5-0.125]){
-            cylinder(h=0.75,r=8/2,center=true);
+            cylinder(h=0.75,r=8/2,center=true,$fn=100);
         }
     }
 }
